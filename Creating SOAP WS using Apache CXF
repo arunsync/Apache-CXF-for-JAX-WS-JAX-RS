@@ -3,7 +3,7 @@ SOAP WS can be created in 2 ways.
   1. Java First (Maven Archetype: cxf-jaxws-javafirst)
   2. WSDL First (Maven Archetype: cxf-jaxws-wsdlfirst)
   
-  1. Building Java First WS (Hellow World Service)
+  1.1 Building Java First WS (Hello World Service - Using Archetype)
       a. Open STS
       b. File-> New Maven Project
       c. Filter with "cxf-jaxws-javafirst". Make sure the Group Id is "org.apache.cxf.archetype" and click Next
@@ -14,4 +14,13 @@ SOAP WS can be created in 2 ways.
       h. You can see the Web service explored opened with the Hello World service
       i. If we want to create a POJO for the service in which the WSDL should be generated, this approach won't work. Go to the next section below.
       
-  2. Building Java First WS (Customer Service) 
+  1.2. Building Java First WS (Customer Service - ) 
+      a. Download Apache CXF Runtime by going through "http://cxf.apache.org/download.html", store it in your local
+      b. Extract the zip file
+      c. STS -> Window -> CXF 2.x Preferences -> Add the CXF runtime path, apply and close
+      d. Fil -> New -> Dynamic Web Project
+      e. Create a POJO and public methods in which the service is going to expose
+      f. Right click on that java file -> Web Services -> Create Web Service -> Select Web Service Run time as Apache CXF 2.x -> Next-> Finish
+      g. Now we can see the WSDL & cxf-beans.xml is created. Web.xml is updated with CXF servlet.
+      h. When try to run on server, it will throw some exceptions, those are related to the xml files related to CXF. Add pom.xml and add the depencencies 
+         related to the jars.
