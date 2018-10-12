@@ -35,4 +35,9 @@ SOAP WS can be created in 2 ways.
   1. Java First (Maven Archetype: cxf-jaxws-javafirst)
   2. WSDL First (Maven Archetype: cxf-jaxws-wsdlfirst)
   
-  -///////
+  1. Building Java First WS
+      a. Open STS
+      b. File-> New Maven Project
+      c. Filter with "cxf-jaxws-javafirst". Make sure the Group Id is "org.apache.cxf.archetype" and click Next
+      d. Provide Group Id and other details for your projects and click finish
+      e. Now you can see the project is created and it has 0.
