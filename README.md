@@ -28,3 +28,11 @@ JAX-WS (It is a Java standard to build web service) is a specification and here 
   4. Merto
   
   
+
+Creating SOAP WS using Apache CXF
+---------------------------------
+SOAP WS can be created in 2 ways.
+  1. Java First (Maven Archetype: cxf-jaxws-javafirst)
+  2. WSDL First (Maven Archetype: cxf-jaxws-wsdlfirst)
+  
+  -///////
